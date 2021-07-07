@@ -1,0 +1,31 @@
+{
+  "name": "arvis-httpstatuses",
+  "version": "0.0.1",
+  "description": "arvis workflow for [httpstatuses.com](https://httpstatuses.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "arvis-link"
+  },
+  "keywords": [
+    "arvis",
+    "arvish",
+    "arvis-workflow",
+    "http",
+    "httpstatuses",
+    "status",
+    "code"
+  ],
+  "author": {
+    "name": "nswbmw",
+    "email": "nswbmw1992@gmail.com",
+    "url": "github.com/nswbmw"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "arvish": ">=0.4.6"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}

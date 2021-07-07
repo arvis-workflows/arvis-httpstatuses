@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "creator": "nswbmw",
+  "defaultIcon": "icon.png",
+  "version": "0.0.1",
+  "description": "arvis workflow for [httpstatuses.com](https://httpstatuses.com)",
+  "name": "arvis-httpstatuses",
+  "readme": "",
+  "webAddress": "https://github.com/jopemachine/arvis-httpstatuses",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "http",
+      "title": "Searching Status Code...",
+      "subtitle": "",
+      "scriptFilter": "node index.js \"{query}\"",
+      "runningSubtext": "Searching...",
+      "withspace": true,
+      "argType": "required",
+      "actions": [
+        {
+          "modifiers": "normal",
+          "type": "open",
+          "target": "{query}"
+        }
+      ]
+    }
+  ]
+}
